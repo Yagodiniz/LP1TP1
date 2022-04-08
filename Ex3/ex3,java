@@ -1,0 +1,15 @@
+//3. Calcular e exibir a área de um quadrado a partir do valor de sua diagonal que será digitado. 
+//Breno e Yago
+import java.util.Scanner;
+
+public class ex3 {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite a diagonal de um quadrado:");
+		double diagonal = scan.nextDouble();
+        double area = diagonal * diagonal / 2;
+		System.out.println("A area é " + area);
+		scan.close();
+	}
+}
