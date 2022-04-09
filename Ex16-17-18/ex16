@@ -1,0 +1,19 @@
+//16. Entrar via teclado com o valor de um ângulo em graus, calcular e exibir as
+//seguintes funções trigonométricas: seno, cosseno, tangente e secante deste ângulo.
+//Lembre-se que uma função trigonométrica trabalha em radianos.
+//Breno e Yago
+package ex16;
+import java.util.Scanner;
+
+public class Ex16 {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Digite o valor do angulo:");
+    double angulo = scan.nextDouble();
+    double seno = Math.sin(Math.toRadians(angulo));
+    double cos = Math.cos(Math.toRadians(angulo));
+    double tang = Math.tan(Math.toRadians(angulo));
+    double secante = 1/cos;
+    System.out.println("Seno: " + seno + " Coseno: " + cos + " Tangente: " + tang + " Secante: " + secante);
+    }
+}
