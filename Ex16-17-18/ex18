@@ -1,0 +1,25 @@
+//18. Entrar via teclado com o valor de cinco produtos. Após as entradas, digitar um
+//valor referente ao pagamento da somatória destes valores. Calcular e exibir o troco
+//que deverá ser devolvido.
+//Breno e Yago
+package ex18;
+import java.util.Scanner;
+
+public class Ex18 {
+
+    public static void main(String[] args) {
+        
+        Scanner scan = new Scanner(System.in);
+	System.out.println("Digite os 5 produtos em sequencia:");
+	double p1 = scan.nextDouble();
+        double p2 = scan.nextDouble();
+        double p3 = scan.nextDouble();
+        double p4 = scan.nextDouble();
+        double p5 = scan.nextDouble();
+        System.out.println("Digite o valor de pagamento:");
+        double pag = scan.nextDouble();
+        double troco = pag - (p1 + p2 + p3 + p4 + p5);
+	System.out.printf("O troco foi R$%.2f", troco);
+    }
+    
+}
