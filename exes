@@ -1,0 +1,74 @@
+//16. Entrar via teclado com o valor de um ângulo em graus, calcular e exibir as
+//seguintes funções trigonométricas: seno, cosseno, tangente e secante deste ângulo.
+//Lembre-se que uma função trigonométrica trabalha em radianos.
+//Breno e Yago
+package ex16;
+import java.util.Scanner;
+
+public class Ex16 {
+    public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Digite o valor do angulo:");
+    double angulo = scan.nextDouble();
+    double seno = Math.sin(Math.toRadians(angulo));
+    double cos = Math.cos(Math.toRadians(angulo));
+    double tang = Math.tan(Math.toRadians(angulo));
+    double secante = 1/cos;
+    System.out.println("Seno: " + seno + " Coseno: " + cos + " Tangente: " + tang + " Secante: " + secante);
+    }
+}
+
+==
+
+//17. Entrar via teclado com dois valores quaisquer “X” e “Y”. Calcular e exibir o
+//cálculo XY (“X” elevado a “Y”). Pesquisar as funções Exp e Ln.
+//Breno e Yago
+package ex17;
+import java.util.Scanner;
+
+public class Ex17 {
+
+    public static void main(String[] args) {
+        
+        Scanner scan = new Scanner(System.in);
+	System.out.println("Digite o valor de x:");
+	double x = scan.nextDouble();
+	System.out.println("Digite o valor de y:");
+	double y = scan.nextDouble();
+        double pot = Math.pow(x, y);
+	System.out.println(pot);
+    }
+    
+}
+
+== 
+
+//18. Entrar via teclado com o valor de cinco produtos. Após as entradas, digitar um
+//valor referente ao pagamento da somatória destes valores. Calcular e exibir o troco
+//que deverá ser devolvido.
+//Breno e Yago
+package ex18;
+import java.util.Scanner;
+
+public class Ex18 {
+
+    public static void main(String[] args) {
+        
+        Scanner scan = new Scanner(System.in);
+	System.out.println("Digite os 5 produtos em sequencia:");
+	double p1 = scan.nextDouble();
+        double p2 = scan.nextDouble();
+        double p3 = scan.nextDouble();
+        double p4 = scan.nextDouble();
+        double p5 = scan.nextDouble();
+        System.out.println("Digite o valor de pagamento:");
+        double pag = scan.nextDouble();
+        double troco = (p1 + p2 + p3 + p4 + p5) - pag;
+	System.out.print("O troco foi R$" + %.2f(troco));
+        System.out.format("%.2", args)
+	double y = scan.nextDouble();
+        double pot = Math.pow(x, y);
+	System.out.println(pot);
+    }
+    
+}
